@@ -1,0 +1,124 @@
+@media only screen and ( max-width : 1129px ){
+.img1, .img2, .img3, .img4{
+    height: 150px;
+    width: 150px;
+}
+.teacher-title{
+    font-size: 1rem;
+}
+}
+
+@media only screen and ( max-width : 1129px ){
+    .hero-text{
+        font-size: 1.5rem ;
+        line-height: normal;
+        top: 30%;
+    }
+    .founder-about-text{
+        line-height: normal;
+    }
+    .founder-img{
+        margin-left: 0;
+    }
+    .newsletter-header{
+        font-size: 2.5rem;
+    }
+
+ .div1{
+        width: 350px;
+        height: 350px;
+        padding: 20px;
+    }
+    .div3,.div2{
+        display: none;
+    }
+    .parent{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and ( max-width :720px ){
+    .hero-text{
+        font-size: .9rem ;
+    }
+    .founder-container{
+        flex-direction: column;
+        height: auto;
+    }
+    .founder-img{
+        display: none;
+    }
+    .founder-text{
+       width: 90%;
+    }
+}
+
+
+@media only screen and ( max-width :800px ){
+   .plans-ctnr{
+    flex-direction: column;
+   }
+   .plan-text{
+    width: 80vw;
+    margin-bottom: 20px;
+   }
+   .new-student-pricing-header {
+    font-size: 2rem;
+   }
+   .news-container-input{
+    margin-top: 10px;
+   }
+   .newsletter-header{
+    font-size: 1.5rem;
+}
+.div1{
+    width: 250px;
+    height: 250px;
+    padding: 10px;
+}
+}
+
+
+
+@media only screen and ( max-width :750px ){
+  .teachers-container{
+    flex-direction: column;
+  }
+ .teachers-text{
+    width: 90%;
+ }
+ .hide{
+    display: none;
+ }
+ .teachers-section{
+    height: auto;
+    padding: 0;
+ }
+ .teacher-imgg{
+    width: 80%;
+ }
+ .teachers-page-container{
+    flex-direction: column;
+ }
+ .img1, .img2, .img3, .img4{
+    height: 370px;
+    width: 370px;
+ }
+ .teacher-title{
+    font-size: 1.3rem;
+}
+}
+
+@media only screen and ( max-width :700px ){
+.hide-text{
+    display: none;
+}
+.div2, .div3{
+    display: none;
+}
+.div1{
+    width: 150px;
+    height: 150px;
+    padding: 5px;
+}
+}

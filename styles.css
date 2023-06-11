@@ -1,0 +1,952 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600&family=Bodoni+Moda:wght@400;500&family=Fraunces:wght@100&family=League+Spartan:wght@600;700;800&family=Noto+Serif:wght@400;700&family=Yeseva+One&display=swap');
+
+
+/* global styling */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --main-color:#98ABA7;
+    --secondary-color:#DBE4C6;
+    --bg-color:#F6F0E3;
+    --accent-color:#B5C8C4;
+    --dark-accent-color:#514D49;
+    --main-headings: 'Yeseva One';
+    --secondary-headings:'League Spartan', sans-serif;
+    --main-font: 'Abhaya Libre', serif;
+    --thin-font:'Fraunces', serif;
+    --secondary-main-font:'Bodoni Moda', serif;
+}
+img {
+	max-width: 100%;
+}
+
+
+a{
+    text-decoration: none;
+}
+a:hover{
+    cursor: pointer;
+}
+h1, h2, h3, h4 , h5 , h6{
+    text-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px; 
+}
+h4{
+    color: var(--accent-color);
+}
+i{
+    font-weight: bold;
+}
+h5, .rates{
+    color: var(--bg-color);
+}
+button{
+    background-color: var(--dark-accent-color);
+    padding: 20px 40px;
+    margin: 10px auto;
+    font-weight: bolder;
+    cursor: pointer;
+    font-size: 1rem;
+    border: transparent;
+    border-radius: 5px;
+}
+button a {
+    color: var(--bg-color);
+}
+
+
+/* typography */
+.white{
+    color: var(--bg-color);
+}
+.black{
+   color: var(--dark-accent-color);
+}
+.ig-header, .welcome-msg-header, .founder-header, .classes-header, .teachers-header{
+    font-size: 2.5rem;
+    padding: 25px 0 ;
+}
+.description-header{
+    font-size: 1.3rem;
+    margin: 10px 0 ;
+    color: #514D49;
+}
+
+
+.description-text{
+    font-weight: lighter;
+    font-family: var(--secondary-main-font);
+}
+.description-header{
+    font-weight: 200;
+}
+.mute, a{
+    font-size: 1.2rem;
+    font-weight: lighter;
+    color: #B69078;
+}
+
+.classes-description-header{
+    font-size: 2.3rem;
+    color: var(--accent-color);
+    padding-top: 90px;
+}
+.founder-about-text, .teachers-intro{
+    font-size: 1.3rem;
+    line-height: 30px;
+}
+.welcome-msg-text{
+    font-family: var(--main-font);
+    font-size: larger;
+}
+.main-description-header{
+ margin-bottom: 70px;
+}
+h5{
+    line-height: 30px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: var(--secondary-main-font);
+}
+.description-header, .teachers-header{
+    font-family: var(--secondary-headings);
+
+}
+
+i{
+    color: var(--accent-color);
+}
+/* font families */
+.hero-text{
+    font-family: var(--thin-font);
+}
+.welcome-msg-header,.founder-header{
+    font-family: var(--secondary-headings);
+    font-weight: 200;
+}
+ .founder-about-text, .teachers-text{
+    font-family: var(--main-font);
+}
+.teacher-page-header{
+  font-family: var(--secondary-headings);
+  color: var(--bg-color);
+  position: relative;
+  top: 40%;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 30px;
+  padding: 50px 0;
+}
+.description-text, .footer-text{
+    font-family: var(--thin-font);
+}
+.mute, .classes-description-header{
+    font-family: var(--main-headings);
+}
+.main-description-header{
+    font-size: 4rem;
+color: var(--accent-color);
+font-family: var(--secondary-headings);
+
+}
+.mission-statement{
+    font-family: 'Lora', serif;
+    font-size: 1.2rem;
+    font-weight: 100;
+}
+/* global styling  start */
+
+/* global styling  end */
+
+/* hero section start */
+
+.hero-text{
+    z-index: 2;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    width: 100%;
+    color:#F6F0E3;
+    line-height: 100px;
+}
+.hero-vid{
+    max-width: 100vw;
+  
+}
+.hero-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+@keyframes fadeIn{
+    from{opacity: 0} to {opacity: 1;}
+  }
+
+  .fadeIn{
+    animation: fadeIn 3s;
+  }
+/* hero section end */
+
+/* welcome msg start*/
+.welcome-msg-container{
+    display: flex;
+    justify-content: space-between;
+    border: 3px solid var(--dark-accent-color);
+}
+
+
+@keyframes slideIn{
+    from {
+     margin-left: 100%;
+     width: 300%;
+   }
+ 
+   to {
+     margin-left: 0%;
+     width: 100%;
+   }
+ }
+ 
+/* ease in animation */
+
+
+
+/* Scroller styling */
+.scroller {
+    height: 1.2em;
+    line-height: 1.2em;
+    position: relative;
+    overflow: hidden;
+    width: 20em;
+   left: -20%;
+   right: -50%;
+
+  }
+  .scroller > span {
+    position: absolute;
+    animation: slide 5s infinite;
+    font-weight: bold;
+  }
+  @keyframes slide {
+    0% {
+      top: 0;
+    }
+    25% {
+      top: -1.2em;
+    }
+    50% {
+      top: -2.4em;
+    }
+    75% {
+      top: -3.6em;
+    }
+  }
+
+  .page-break-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+/*
+.box{
+    transform: translateX(200%);
+    transition: transform 1s ease;
+}
+.box.show{
+    transform: translateX(0);
+}
+.box:nth-of-type(even){
+    transform: translateX(-200%);
+}
+/* ease in animation end */
+
+.welcome-msg-header{
+    text-align: center;
+    margin-top: 140px;
+}
+.welcome-text{
+    background-color:#B69078;
+}
+.welcome-msg-text{
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+    text-align: center;
+}
+
+.welcome-pic1, .welcome-pic2, .welcome-text{
+    width: 35%;
+    height: 500px;
+}
+.img{
+    width: 100%;
+   height: 500px;
+}
+/* welcome msg end */
+
+/* founder start */
+.founder-section{
+    width: 100vw;
+    background-color: var(--bg-color);
+}
+.founder-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    background-color: var(--bg-color);
+}
+.founder-img{
+    width: 100%;
+    height: 80vh;
+    margin-left: 100px;
+}
+.founder-text{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    text-align: center;
+}
+.founder-about-text{
+    margin: 20px 0;
+}
+
+/* founder end */
+
+/* page break start */ 
+.mission-container, .page-break{
+    width: 100vw;
+    background-image: url(src/bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+.mission-container{
+    background-image: url(missionimg.png);
+    height: 50vh;
+}
+.mission-statement, .page-break-text{
+    color: var(--bg-color);
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.page-break-text{
+    font-size: 4rem;
+}
+.page-break{
+    background-image: url(src/pagebreak.png);
+    height: 60vh;
+}
+
+/* page break end */
+/* classes start */
+.class-descriptions{
+    width: 100vw;
+    height: 20vh;
+   background-color: #948C87;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    color: #fff;
+    font-weight: bolder;
+    padding-top: 100px;
+}
+.class-video{
+    position: relative;
+    width: 400px;
+    height: 600px;
+}
+/* classes end */
+
+/* teachers start */
+.teachers-section{
+    width: 100vw;
+    background-color: var(--bg-color);
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+.teachers-container{
+    display: flex;
+    width: 100vw;
+margin-left: auto;
+margin-right: auto;
+justify-content: center;
+align-items: center;
+}
+
+.teachers-text{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+padding: 30px;
+}
+.teacher-img{
+    width: 40%;
+    margin: 0 auto;
+    height: 55vh;
+    background-size: cover;
+    background-position: center;
+    background-image: url(src/More\ than\ just\ a\ workout\ -\ TPC\ is\ a\ community_.jpeg);
+}
+
+.teacher-imgg{
+    width: 40%;
+    margin: 0 auto;
+    height: 55vh;
+    background-size: cover;
+    background-position: center;
+    background-image: url(src/founderimg.jpeg);
+}
+/* teachers end */
+
+/* classes description start */
+.description-page-header{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--bg-color);
+}
+
+.description-page-intro{
+    text-align: center;
+    width: 70%;
+    margin: 15px auto;
+    line-height: 40px;
+    padding: 30px;
+}
+.classes-description-header{
+    text-align: center;
+    padding: 5px 0;
+}
+.classes-description-section{
+    width: 100vw;
+    height: auto;
+    background-color: var(--dark-accent-color);
+}
+.classes-description-container{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+    width: 90%;
+    padding: 60px;
+    margin-bottom: 100px;
+}
+
+.classes-cards-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 40%;
+}
+
+.description-img{
+    max-width: 500px;
+    height: 600px;
+    margin-top: 50px;
+}
+.description-text{
+    line-height: 25px;
+}
+
+.container-section{
+    background-color: var(--bg-color);
+    width: 100vw;
+    height: auto;
+}
+/* classes description end */
+
+
+/* pricing start */
+.pricing-section{
+    background-image: url(src/Screen\ Shot\ 2023-04-17\ at\ 7.14.10\ PM.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    padding: 70px 0 ;
+    color: var(--dark-accent-color);
+}
+.pricing-title{
+    text-align: start;
+    font-size: 3rem;
+    padding-top: 30px;
+    font-family: var(--main-headings);
+    padding-bottom: 12px;
+}
+.pricing-section-header{
+    text-align: center;
+    font-size: 6.5rem;
+    font-family: var(--main-headings);
+}
+.pricing-titlee{
+    text-align: center;
+    font-size: 1.7rem;
+    width: 60%;
+    line-height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: var(--main-font);
+}
+.class{
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--bg-color);
+}
+.membership-plans{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 60px auto;
+}
+.price-card{
+    text-align: center;
+}
+.class-price{
+    display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.pricing-header{
+    padding-bottom: 10px;
+    font-size: 2rem;
+}
+.price{
+    font-size: 1.4rem;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--bg-color);
+}
+.new-student-pricing{
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 45vh;
+    text-align: center;
+    color: var(--bg-color);
+    background-image: url(pagebreakk.png);
+}
+.new-student-pricing-header{
+    position: relative;
+    top: 50px;
+    font-size: 3rem;
+    padding-top: 25px;
+}
+.new-student-pricing-text{
+    position: relative;
+    top: 70px;
+    font-size: 1.4rem;
+}
+/* pricing end */
+
+/* teachers.html */
+
+.about-header{
+    width: 100vw;
+    height: auto;
+  background-color: var(--dark-accent-color);
+}
+
+/* footer start */
+/* footer end */
+#teachers{
+    height: auto;
+    background-color: var(--bg-color);
+}
+.teachers-page-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  padding: 30px 0 ;
+  width: 100vw;
+}
+.card_image{
+  display: flex;
+    height:auto;
+    width: 95vw;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--bg-color);
+    flex-direction: column;
+}
+.teacher-bio-ctnr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+ .img1, .img2, .img3, .img4 {
+    height: 350px;
+  width: 250px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+.teacher-text{
+    width: 90%;
+    line-height: 20px;
+    margin-top: 10px;
+    font-family: 'Lora', serif;
+
+}
+.teacher-title{
+    font-size: 1.5rem;
+    padding: 10px;
+    color: var(--dark-accent-color);
+    font-family: var(--main-font)
+}
+  .img1{
+    background-image: url(src/yogi.jpeg);
+  }
+
+  .img2{
+    background-image: url(src/Olea\ and\ Fig\ _\ Brand\ Strategy\ and\ Marketing\ for\ Solo\ Entrepreneurs.jpeg);
+  }
+ .img3{
+    background-image: url(src/teach.jpeg);
+ }
+ .img4{
+    background-image: url(src/_\ \(5\).jpg);
+ }
+ .img5{
+    background-image: url(src/Personal\ brand\ photoshoot\ inspiration-\ Yoga\ studio-\ Trilogy\ Creatives.jpeg);
+ }
+ .img6{
+    background-image: url(src/_\ \(6\).jpeg);
+ }
+ .center{
+    text-align: center;
+    padding: 15px 0 ;
+ }
+
+
+ .booking-btn{
+    margin-top: 50px;
+    background-color: black;
+    border: 1px solid var(--main-color);
+    color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 50%;
+    padding: 20px;
+ }
+
+
+ /* contact styling */
+ .contact-container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+  }
+  .contact{
+    color: var(--bg-color);
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+  }
+  
+  .left-col {
+    width: 50%;
+    height: 100%;
+    background-image: url("src/Yoga\ Instructor\ Personal\ Branding\ Photos\ in\ Amsterdam\ -\ Sandra\ Herrero\ Photography.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .right-col {
+    width: 50%;
+    height: 100vh;
+    padding: 5rem 3.5rem;
+    background-color: var(--main-color);
+  }
+  
+label, button{
+    font-family: var(--main-headings-font);
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+   color: var(--bg-color);
+  }
+  
+
+  
+  .contact-text {
+    font-size: 0.9rem;
+    letter-spacing: 0.01rem;
+    width: 40vw;
+    margin: 0.25rem 0;
+  }
+  
+  label{
+    color: var(--bg-color);
+    font-size: 1.625rem;
+  }
+  
+  form {
+    width: 31.25rem;
+    position: relative;
+    margin-top: 2rem;
+    padding: 1rem 0;
+    
+  }
+  
+  .contact-input, textarea, label {
+    width: 40vw;
+    display: block;
+    
+  }
+
+  
+  .contact-input::placeholder, textarea::placeholder {
+   color: black;
+  }
+  
+  .contact-input, textarea {
+    color: var(--main-color);
+    font-weight: 500;
+    background: whitesmoke;
+    border: none;
+    border-bottom: 1px solid var(--accent-color);
+    padding: 0.5rem 0;
+    margin-bottom: 1rem;
+    outline: none;
+  }
+  
+  textarea {
+    resize: none;
+  }
+  
+  .contact-input:hover, textarea:hover, button:hover {
+    opacity: 0.5;
+  }
+  
+  button:active {
+    opacity: 0.8;
+  }
+
+/* footer */
+
+.footer-nav{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 30vh;
+}
+li{
+    text-decoration: none;
+    list-style: none;
+    padding: 5px 0 ;
+}
+.footer-header{
+  margin: 20px 0 ;
+}
+
+
+/* instagram start */
+.instagram-container {
+display: flex;
+    height:auto;
+    width: 100vw;
+}
+.a {
+   
+    background: url(src/What\ To\ Wear\ To\ Yoga\ &\ What\ To\ Bring\ With\ You\ To\ Yoga.png) center / cover;
+}
+.a img {
+    width:100%;
+}
+.b {
+  
+    background: url(src/studio.jpeg) center / cover;
+}
+.b img {
+    width:100%;
+}
+.c {
+  
+    background: url(src/guide.png) center / cover;
+}
+.c img {
+    width:100%;
+}
+.d {
+
+    background: url(src/coach.jpeg) center / cover;
+}
+.d img {
+    width:100%;
+}
+.e {
+   
+    background: url(src/traditional.jpeg) center / cover;
+}
+.e img {
+    width:100%;
+}
+
+.a, .b, .c, .d, .e{
+    width: 25%;
+    height: 250px;
+    background-size: cover;
+  }
+
+  .footer-col{
+    width: 25%;
+  }
+
+  .iframe{
+    height: 35vh;
+  }
+
+
+
+
+ 
+
+/* Plans and prcing */ 
+#plans {
+    height: 210vh;
+    width: 100vw;
+    background-color: var(--bg-color);
+    color: var(--bg-color);
+}
+
+.plans-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.plan-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--accent-color);
+    height: 450px;
+    width: 70vw;
+    margin: 20px;
+    border: 3px solid var(--dark-accent-color);
+}
+
+.plan-text{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.plan-img{
+    width: 50%;
+    height: 445px;
+}
+.plan{
+    height: 100%;
+    width: 100%;
+}
+.plan-header{
+    font-family: var(--secondary-headings);
+    font-size: 2.5rem;
+    color: #F6F0E3;
+    padding: 30px;
+}
+
+
+
+/* newsletter CTA */
+.newsletter-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.news-container {
+    position: relative;
+    text-align: center;
+    color: var(--dark-accent-color);
+    height: 60vh;
+  }
+
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--bg-color);
+    width: 80vw;
+    height: 40vh;
+    opacity: .9;
+    padding: 20px;
+  }
+  .newsletter-header{
+    font-size: 3.5rem;
+  }
+  .news-container input{
+    height: 50px;
+    margin-top: 20px;
+    padding: 10px;
+  }
+  .newsletter-img{
+    height: 70vh;
+  }
+
+  .plans-ctnr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .plan-imagee{
+    height: 40vh;
+    width: 140%;
+    z-index: 3;
+    padding: 10px;
+  }
+  .plan{
+    width: 90%;
+  }
+  .plan p{
+    padding: 10px;
+    font-size: 1.5rem;
+  }
+
+  .plan-text{
+    background-color: #B69078;
+    color:  #F6F0E3;
+    width: 30vw;
+    margin-left: 10px;
+    padding: 10px;
+  }
+
+  .plansandpricing{
+    width: 100vw;
+    background-color: #98ABA7;
+    height: auto;
+    padding: 40px;
+  }

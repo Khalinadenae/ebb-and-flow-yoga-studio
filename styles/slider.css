@@ -1,0 +1,188 @@
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 80vw;
+  position: relative;
+  margin: auto;
+  height:auto;
+  background-color: #948C87;
+  color:#F6F0E3;
+}
+.slideshow-wrapper{
+    width: 100vw;
+    background-color :#948C87;
+    padding: 50px;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding-top: 150px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* media queries */
+@media only screen and ( max-width : 1800px ){
+  .slideshow-wrapper{
+    height: 120vh;
+  }
+}
+
+
+
+@media only screen and ( max-width : 1300px ){
+  .description-img{
+display: none;
+  }
+  .slideshow-wrapper{
+    height: 100vh;
+    width: 100%;
+    padding: 0;
+  }
+  h5{
+    font-size: .9rem;
+    line-height: normal;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+.description-text{
+  font-size: 1.4rem;
+  line-height: 35px;
+}
+  .classes-description-container{
+    flex-direction: column;
+    width: 100%;
+    padding-top: 20px;
+  }
+.classes-cards-container{
+  width: 100%;
+}
+  h5{
+    display: none;
+  }
+  .classes-description-header{
+    font-size: 2.3rem;
+  }
+  .description-header{
+    font-size: 1.5rem;
+  }
+  .next, .prev{
+    top: 120%;
+  }
+}
+
+@media only screen and ( max-width : 1000px ){
+  .classes-description-container{
+    padding: 0;
+  }
+
+  .classes-description-header{
+    font-size: 1.7rem;
+    text-align: left;
+    color: #F6F0E3;
+    margin-top: 25px;
+  }
+  .rates{
+    color: #F6F0E3;
+  }
+  .description-header{
+    font-size: 1.2rem;
+  }
+  .description-text{
+    font-size: 1rem;
+    line-height: normal;
+  }
+}
+
+
+@media only screen and ( max-width : 600px ){
+
+  .classes-description-header{
+    font-size: 1.3rem;
+  }
+  .description-header{
+    font-size: 1rem;
+  }
+  .description-text{
+    font-size: 1rem;
+    line-height: 25px;
+  
+  }
+.description-card{
+  margin: 12px 0;
+}
+}
